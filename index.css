@@ -1,14 +1,24 @@
 body {
   margin: 0;
+}
+
+.cloud-body {
   background: #87CEFA;
+  height: 100vh;
 }
 
 @keyframes flyMove {
-  from {
+  0% {
     transform: translateX(-50vw);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(30vw);
+    opacity: 1;
 	}
-	to {
-    transform: translateX(100vw);
+	100% {
+    transform: translateX(80vw);
+    opacity: 0;
 	}
 }
 
