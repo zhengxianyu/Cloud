@@ -5,7 +5,7 @@ body {
 
 @keyframes flyMove {
   from {
-    transform: translateX(-10vw);
+    transform: translateX(-50vw);
 	}
 	to {
     transform: translateX(100vw);
@@ -17,7 +17,7 @@ body {
   height: 575px;
   border-radius: 50%;
   position: absolute;
-  top: -600px;
+  top: -575px;
   animation: flyMove 30s linear infinite;
 }
 
