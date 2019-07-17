@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  background: #87CEFA;
+}
+
+@keyframes flyMove {
+  from {
+    transform: translateX(-10vw);
+	}
+	to {
+    transform: translateX(100vw);
+	}
+}
+
+.cloud {
+  width: 1000px;
+  height: 575px;
+  border-radius: 50%;
+  position: absolute;
+  top: -600px;
+  animation: flyMove 30s linear infinite;
+}
+
+#cloud {
+  filter: url(#filter);
+  box-shadow: 10px 600px 108px -54px #fff;
+}
+
+.heart {
+  position: absolute;
+  bottom: 0;
+}
+
+@keyframes heartMoveOne {
+  10% {
+    transform: translateX(47vw) translateY(-4vw) rotate(30deg);
+    opacity: 1;
+  }
+  40% {
+    transform: translateX(50vw) translateY(-10vw) rotate(45deg);
+    opacity: 0.6;
+  }
+  70% {
+    transform: translateX(53vw) translateY(-16vw) rotate(60deg);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateX(47vw) translateY(-22vw) rotate(30deg);
+    opacity: 0.1;
+	}
+}
+
+@keyframes heartMoveTwo {
+  10% {
+    transform: translateX(50vw) translateY(-4vw) rotate(30deg);
+    opacity: 1;
+  }
+  40% {
+    transform: translateX(47vw) translateY(-10vw) rotate(45deg);
+    opacity: 0.6;
+  }
+  70% {
+    transform: translateX(50vw) translateY(-16vw) rotate(60deg);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateX(53vw) translateY(-22vw) rotate(30deg);
+    opacity: 0.1;
+	}
+}
+
+@keyframes heartMoveThree {
+  10% {
+    transform: translateX(50vw) translateY(-4vw) rotate(30deg);
+    opacity: 1;
+  }
+  40% {
+    transform: translateX(53vw) translateY(-10vw) rotate(45deg);
+    opacity: 0.6;
+  }
+  70% {
+    transform: translateX(50vw) translateY(-16vw) rotate(60deg);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateX(47vw) translateY(-22vw) rotate(30deg);
+    opacity: 0.1;
+	}
+}
+
+.heart-svg {
+  width: 10px;
+  height: 10px;
+  transform: translateX(50vw) rotate(45deg);
+  animation: heartMoveOne 3s linear infinite;
+}
+
+.heart-svg:nth-child(1) {
+  transform: translateX(55vw) rotate(45deg);
+  animation: heartMoveTwo 3s linear infinite;
+}
+
+.heart-svg:nth-child(2) {
+  transform: translateX(60vw) rotate(45deg);
+  animation: heartMoveThree 3s linear infinite;
+}
+
+.heart-svg:nth-child(3) {
+  transform: translateX(45vw) rotate(45deg);
+  animation: heartMoveOne 3s linear infinite;
+  animation-delay: 1s;
+}
+
+.heart-svg:nth-child(4) {
+  transform: translateX(52vw) rotate(45deg);
+  animation: heartMoveTwo 3s linear infinite;
+  animation-delay: 1.5s;
+}
+
+.heart-svg:nth-child(5) {
+  transform: translateX(59vw) rotate(45deg);
+  animation: heartMoveThree 3s linear infinite;
+  animation-delay: 1.5s;
+}

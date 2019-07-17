@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <title>Cloud</title>
+    <link rel="stylesheet" href="index.css" type="text/css"></link>
+  </head>
+  <body>
+    <div class="cloud-body">
+      <div class="cloud" id="cloud"></div>
+      <svg width="0" height="0">
+        <filter id="filter">
+          <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="4" seed="0" />
+          <feDisplacementMap in="SourceGraphic" scale="170" />
+        </filter>
+      </svg>
+    </div>
+    <div class="heart">
+      <svg class="heart-svg">
+        <circle cx="10" cy="10" r="10" fill="deeppink"/>
+      </svg>
+      <svg class="heart-svg">
+        <circle cx="10" cy="10" r="10" fill="deeppink"/>
+      </svg>
+      <svg class="heart-svg">
+        <circle cx="10" cy="10" r="10" fill="deeppink"/>
+      </svg>
+      <svg class="heart-svg">
+        <circle cx="10" cy="10" r="10" fill="deeppink"/>
+      </svg>
+      <svg class="heart-svg">
+        <circle cx="10" cy="10" r="10" fill="deeppink"/>
+      </svg>
+      <svg class="heart-svg">
+        <circle cx="10" cy="10" r="10" fill="deeppink"/>
+      </svg>
+    </div>
+  </body>
+</html>
